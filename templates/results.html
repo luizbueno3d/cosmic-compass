@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Astrology Results</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Astrology Results</h1>
+    <table class="table table-bordered mt-4">
+      <thead>
+        <tr>
+          <th>Destination</th>
+          <th>Score</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Sun Sign</th>
+          <th>Moon Sign</th>
+          <th>Ascendant</th>
+          <th>Birth Latitude</th>
+          <th>Birth Longitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ results.destination }}</td>
+          <td>{{ results.score }}</td>
+          <td>{{ results.latitude }}</td>
+          <td>{{ results.longitude }}</td>
+          <td>{{ results.sun_sign }}</td>
+          <td>{{ results.moon_sign }}</td>
+          <td>{{ results.ascendant }}</td>
+          <td>{{ results.birth_latitude }}</td>
+          <td>{{ results.birth_longitude }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="/" class="btn btn-primary">Back</a>
+  </div>
+</body>
+</html>
